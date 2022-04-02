@@ -6,7 +6,7 @@
 #define UNTITLED4_FIGURE_H
 
 
-class Figure {
+class Figure: public BaseObject {
 public:
 // Площадь.
     virtual double square() = 0;

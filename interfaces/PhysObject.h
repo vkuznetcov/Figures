@@ -8,7 +8,7 @@
 
 #include "Vector2D.h"
 
-class PhysObject {
+class PhysObject: public BaseObject {
 public:
 // Масса, кг.
     virtual double mass() const = 0;

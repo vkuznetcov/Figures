@@ -15,7 +15,7 @@
 #include <iostream>
 
 
-class Ellipse : public BaseObject, public Printable, public DialogInitiable, public Figure, public PhysObject {
+class Ellipse : public Printable, public DialogInitiable, public Figure, public PhysObject {
 private:
     double a, b, massValue;
 public:
@@ -66,8 +66,7 @@ public:
     }
 
     void draw() override {
-        std::cout << "a value: " << a << std::endl << "b value: " << b << std::endl << "mass  value: " << massValue
-                  << std::endl;
+        std::cout << "a value: " << a << "; b value: " << b << "; mass  value: " << massValue << std::endl;
     }
 
 };

@@ -6,7 +6,7 @@
 #define UNTITLED4_DIALOGINITIABLE_H
 
 
-class DialogInitiable {
+class DialogInitiable: public BaseObject {
 public:
 // Задать параметры объекта с помощью диалога с пользователем.
     virtual void initFromDialog() = 0;

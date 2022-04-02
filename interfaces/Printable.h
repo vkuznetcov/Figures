@@ -6,7 +6,7 @@
 #define UNTITLED4_PRINTABLE_H
 
 
-class Printable {
+class Printable: public BaseObject {
 public:
 // Отобразить на экране
 // (выводить в текстовом виде параметры фигуры).

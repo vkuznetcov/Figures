@@ -14,7 +14,7 @@
 #include <iostream>
 
 
-class Section : public BaseObject, public Printable, public DialogInitiable, public PhysObject {
+class Section : public Printable, public DialogInitiable, public PhysObject {
 private:
     double x1, x2, massValue;
 public:
@@ -30,7 +30,7 @@ public:
     }
 
     void draw() {
-        std::cout << "x1 value: " << x1 << std::endl << "x2 value: " << x2 << std::endl;
+        std::cout << "x1 value: " << x1 << "; x2 value: " << x2 << "; mass value: " << massValue << std::endl;
     }
 
     std::string classname() {
@@ -47,7 +47,7 @@ public:
 
     Vector2D *position() override {
         Vector2D *vector = new Vector2D;
-        vector->x = (x2 - x1) / 2;
+        vector->x = (x2 + x1) / 2;
         vector->y = 0;
         return vector;
     }
